@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Pet Virtual</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>meu pet virtual</h1>
+
+        <div class="pet-display-area">
+            <img id="pet-image"
+            src="img/feliz.jpg" 
+            alt="seu pet virtual">
+            <p id="pet-name" class="pet-name">Destruidor de Galaxias</p>
+        </div>
+
+        <div class="status-section">
+            <h2>status do pet</h2>
+            <div class="status-bar-group">
+                <label>fome:</label>
+                <div class="bar-container">
+                    <div id="hunger-bar" class="status-bar hunger-bar"></div>
+                    <span id="hunger-text" class="status-text">100%</span>
+                </div>
+            </div>
+            <div class="status-bar-group">
+                <label>felicidade:</label>
+                <div class="bar-container">
+                    <div id="happiness-bar" class="status-bar happiness-bar"></div>
+                        <span id="happiness-text" class="status-text">100%</span>
+                </div>
+            </div>
+                <div class="status-bar-group">
+                  <label>energia:</label>
+                  <div class="bar-container">
+                    <div id="energy-bar" class="status-bar energy-bar"></div>
+                    <span id="energy-text" class="status-text">100%</span>
+                  </div>  
+                </div>
+                <div class="status-bar-group">
+                  <label>higiene:</label>
+                  <div class="bar-container">
+                    <div id="hygiene-bar" class="status-bar hygiene-bar"></div>
+                    <span id="hygiene-text" class="status-text">100%</span>
+                  </div>  
+                </div>
+        </div>
+
+        <div class="actions-section">
+            <h2>ações</h2>
+            <div class="action-buttons">
+                <button id="feed-btn" class="action-button">alimentar</button>
+                <button id="play-btn" class="action-button">brincar</button>
+                <button id="clean-btn" class="action-button">limpar</button>
+                <button id="sleep-btn" class="action-button">fazer dormir</button>
+            </div>
+        </div>
+
+        <div id="message-box" class="modal">
+            <div class="modal-content">
+                <p id="message-text"></p>
+                <button id="close-message-btn" class="action-button">ok</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
